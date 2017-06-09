@@ -1,0 +1,21 @@
+{
+  "name": "eslint-plugin-amd-imports",
+  "version": "1.0.0",
+  "description": "ESLint plugin which verifies AMD style module imports",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Jesse van den Kieboom <jkieboom@esri.com>",
+  "main": "index.js",
+  "homepage": "https://github.com/jkieboom/eslint-plugin-amd-imports",
+  "repository": "github:jkieboom/eslint-plugin-amd-imports",
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
