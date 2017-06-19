@@ -12,10 +12,10 @@
   "homepage": "https://github.com/jkieboom/eslint-plugin-amd-imports",
   "repository": "github:jkieboom/eslint-plugin-amd-imports",
   "peerDependencies": {
-    "eslint": ">=0.8.0"
+    "eslint": ">=4.0.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "license": "ISC"
 }
