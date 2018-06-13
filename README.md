@@ -45,6 +45,7 @@ Then configure the rules you want to use under the rules section.
 
 | Rule                                  | Description |
 |---------------------------------------|-------------|
+| `amd-imports/no-restricted-imports`   | Restrict modules that can be imported. |
 | `amd-imports/no-unexisting-imports`   | Verify that imported modules exist. See [Resolving Modules](#resolving-modules) for details. |
 | `amd-imports/no-unused-imports`       | Verify that imported modules are used. If a module is imported because it has side effects, the imported module variable name may have the `_` prefix or suffix to skip this rule. |
 | `amd-imports/prefer-relative-imports` | Prefer relative imports within a single package instead of top-level package absolute imports. |
@@ -65,7 +66,18 @@ Then configure the rules you want to use under the rules section.
         // A list of modules assumed to be present globally.
         // This is in addition to the modules assumed always
         // to be global: require, define, module, exports
-        "globals": []
+        "globals": [],
+
+        // A list of modules restricted from use
+        // Can be an array of strings for module names
+        // or an object with the name and a custom message.
+        "restricted": [
+            "path/to/module",
+            {
+                "name": "path/to/module",
+                "message": "Please use an alternative module"
+            }
+        ]
     }
 }
 ```
