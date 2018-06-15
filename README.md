@@ -75,7 +75,8 @@ Then configure the rules you want to use under the rules section.
             "path/to/module",
             {
                 "name": "path/to/module",
-                "message": "Please use an alternative module"
+                "message": "Please use an alternative module",
+                "replaceWith": "use/this/module" // custom fixer
             }
         ]
     }
