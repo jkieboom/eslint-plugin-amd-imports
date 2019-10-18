@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-amd-imports",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "ESLint plugin which verifies AMD style module imports",
   "keywords": [
     "eslint",
